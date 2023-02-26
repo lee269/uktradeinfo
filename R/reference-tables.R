@@ -18,6 +18,3 @@ saveRDS(data$value, here("data", "country.rds"))
 # Flows
 data <- fromJSON("https://api.uktradeinfo.com/FlowType", flatten = TRUE)
 saveRDS(data$value, here("data", "flowtype.rds"))
-
-url <- paste0(base, "/OTS(CommoditySitcId=5440,CountryId=11,FlowTypeId=1,MonthId=202201)")
-data <- fromJSON(url)
